@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    height: 40px;
+    max-width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(100, 100, 100, 0.4);
+    color: white;
+}
+
+.ul {
+    display: flex;
+}
+
+.ul li {
+    margin: 10px 20px;
+    font-size: 25px;
+    display: block;
+    transition: 1s ease-in-out;
+}
+.ul li:hover{
+    color: orange;
+    padding: 2px 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.container {
+    height: 700px;
+    background-image: url("https://media.tenor.com/IIQ-ca9nBu0AAAAd/space.gif");
+    background-size: cover;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: serif;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    margin: 23px 0px;
+}
+
+.left {
+    width: 40%;
+    text-align: left;
+    font-size: 20px;
+    margin: 40px 0px;
+    color: white;
+    justify-content: center;
+}
+
+.developer {
+    height: 400px;
+    width: 88%;
+    margin: 40px 0px;
+}
+
+#id {
+    font-size: 35px;
+    color: violet;
+}
+
+.skills_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.skills_box h1 {
+    text-align: center;
+}
+
+.webdevelopment,
+.graphics,
+.video_edittor {
+    height: 300px;
+    width: 500px;
+    box-shadow: 10px 20px 20px black;
+    font-weight: 500;
+    background-color: transparent;
+    border: 3px solid black;
+    color: rgb(134, 218, 9);
+    text-shadow: 0px 2px 2px black;
+}
+
+.list {
+    margin: 0px 120px;
+}
+
+.list li {
+    display: block;
+    font-size: 30px;
+}
+
+.open {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 100;
+}
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    font-weight: 600;
+    color: rgb(176, 100, 248);
+    font-size: 30px;
+    text-align: center;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("https://www.icegif.com/wp-content/uploads/2023/04/icegif-765.gif");
+    background-size: cover;
+    height: 700px;
+    padding: 20px 20px;
+}
+.logo2{
+    height: 500px;
+    width: 400px;
+}
+.form{
+    height: 500px;
+    width: 600px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #aaffe0;
+  color: white;
+  display: flex;
+  color: black;
+  align-items: center;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container2 {
+  border-radius: 5px;
+  background-color: #f0eaea93;
+  padding: 20px;
+}
+.footer{
+    height: 140px;
+    background-color: black;
+    text-align: center;
+}
+.footer h1{
+    cursor: pointer;
+    margin: 0px 20px;
+}
+.logo:hover{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 500px){
+    .container{
+        width: 100%;
+        background-image: url("background.gif");
+        background-size: cover;
+    }
+    nav{
+        width: 90%;
+        text-align: center;
+    }
+    nav .ul li{
+        display: none;
+    }
+    .firstsection{
+        display: block;
+    }
+    .right{
+        text-align: center;
+    }
+    .developer{
+        height: 200px;
+        width: 200px;
+        margin: auto;
+    }
+    .left{
+        font-size: 15px;
+        width: 300px;
+        margin: auto;
+        top: 60%;
+    }
+    .skills_box{
+        display: block;
+        margin: 0px calc(100% - 90%);
+    }
+    .list{
+        margin: 0px 0px;
+    }
+    .list li{
+        font-size: 30px;
+        
+    }
+    .skills_box div{
+        width: 300px;
+        text-align: center;
+        margin: 20px 10px;
+    }
+    .skills{
+        text-align: center;
+    }
+    .stats{
+        display: none;
+    }
+    .contact{
+        display: block;
+    }
+    .logo2{
+        display: none;
+    }
+    .container2{
+        width: 300px;
+    }
+    .form{
+        width: 300px;
+    }
+}

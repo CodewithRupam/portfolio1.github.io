@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://kit.fontawesome.com/53ade4c02b.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<body>
+    <div class="container">
+        <nav>
+            <h1 class="logo">Developer</h1>
+            <ul class="ul">
+                <li>Home</li>
+                <li>Skills</li>
+                <li>Contact</li>
+                <li>Projects</li>
+            </ul>
+        </nav>
+        <div class="open" id="open">
+            <div id="message" style="width: 600px;
+            height: 400px; background-color: aliceblue; border-radius: 50px;">
+                <h1 style="text-align: center; font-weight: 500; font-size: 60px; color: rgb(255, 123, 0);">Developer
+                </h1><br><br>
+                <p style="color: black; text-align: center; font-size: 25px;">
+                    Hi welcome to my developer portfolio. <br> Read more about my skills and projects.</p>
+                <img src="https://envri.eu/wp-content/uploads/2016/08/software-developer-copy.jpg" alt=""
+                    style="height: 100px; width: 120px; border-radius: 50px; display: block; margin: 10px auto;"><br>
+                <button style="height: 50px; width: 120px; text-align: center; border-radius: 50px; font-size: 20px;
+                 background: transparent; border: 2px solid rgb(78, 131, 0); margin: 0px auto; display: block;"
+                    id="button">Read</button>
+            </div>
+        </div>
+        <div class="firstsection">
+            <div class="left">
+                <h1 style="text-align: center;">Hi my name is <span id="text"
+                        style="color: greenyellow; font-weight: 500;">Rupam</span></h1><br>
+                <h2 style="text-align: center; color: rgb(255, 255, 255); font-weight: 400;">
+                    I am a 13 year old programmer. I have 3 year of <br> experience in the field of programming.
+                    I like to work in the field of <span style="color: rgb(255, 113, 137);">Web development</span>
+                    and <span style="color: rgb(255, 235, 122);">UI/ UX Designing</span>.
+                </h2><br><br>
+                <p style="font-size: 35px; color: white;">I am a - <span id="id"></span></p>
+            </div>
+            <div class="right">
+                <img src="developer.png" alt="" class="developer">
+            </div>
+        </div>
+    </div>
+    <div class="second_container">
+        <h1
+            style="color: rgb(255, 49, 118); font-size: 60px; text-align: center; font-weight: 700; text-shadow: 10px 10px 10px black;" class="skills">
+            My Skills</h1>
+        <br><br><br>
+        <div class="skills_box">
+            <div class="webdevelopment"><br>
+                <h1> <i class="fa-solid fa-code"></i> Web Development</h1><br><br><br>
+                <ul class="list">
+                    <li><i class="fa-brands fa-html5"></i> Html - 90%</li>
+                    <li><i class="fa-brands fa-css3-alt"></i> Css - 89%</li>
+                    <li><i class="fa-brands fa-square-js"></i> Javascript - 79%</li>
+                </ul>
+            </div>
+            <div class="graphics"><br>
+                <h1><i class="fa-solid fa-pen"></i> UI/ UX Designing</h1>
+                <br><br><br>
+                <ul class="list">
+                    <li><i class="fa-brands fa-figma"></i> Figma - 90%</li>
+                    <li><i class="fa-solid fa-pen-nib"></i> Adobe XD - 85%</li>
+                    <li><i class="fa-solid fa-brush"></i> Adobe Illustrator-69%</li>
+                </ul>
+            </div>
+            <div class="video_edittor"><br>
+                <h1> <i class="fa-solid fa-video"></i>Video Editing</h1>
+                <br><br><br>
+                <ul class="list">
+                    <li><i class="fa-solid fa-image"></i> Camtasia - 80%</li>
+                    <li><i class="fa-solid fa-camera"></i> Filmora - 80%</li>
+                    <li><i class="fa-solid fa-images"></i> Adobe premiere - 70%</li>
+                </ul>
+            </div>
+        </div><br><br>
+        <div class="stats">
+            <div class="web">
+                <h1><i class="fa-solid fa-code"></i>  Web development</h1>
+                <canvas id="webchart" class="webchart" height="400" width="400"></canvas>
+            </div>
+            <div class="graphic">
+                <h1><i class="fa-solid fa-pen"></i>  UI Designing</h1>
+                <canvas id="UI" height="400" width="400"></canvas>
+            </div>
+        </div>
+    </div><br><br><br><br><br>
+    <div class="contact">
+        <div class="logo2">
+            <img src="developer2.png" alt="" class="logo2">
+        </div>
+        <div class="form">
+            <div class="container2"> 
+                <h1 style="text-align: center; font-size: 40px; color: rgb(0, 255, 13);">Contact Form</h1>
+                  <label for="fname">Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Email</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your Email id">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                  <label for="subject">Description</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                  <input type="submit" value="Submit">
+              </div>
+    </div><br><br></div>
+    <div class="footer"><br><br>
+        <div class="icons" style="display: flex; align-items: center; justify-content: center;">
+            <a href="https://twitter.com/rupammandal204"><h1 style="color: white;"><i class="fa-brands fa-twitter"></i></h1></a>
+            <a href="https://www.facebook.com/profile.php?id=100092554890340"><h1 style="color: white;"><i class="fa-brands fa-facebook"></i></h1></a>
+            <a href="https://www.instagram.com/rupam.developer/"><h1 style="color: white;"><i class="fa-brands fa-instagram"></i></h1></a>
+            
+        </div><br>
+        <p style="color: white;">Copyright 2023 - 2025</p>
+        </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
