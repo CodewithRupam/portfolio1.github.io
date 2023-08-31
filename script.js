@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
   , 5000)
 })
 var typed = new Typed('#id', {
-  strings: ['<i>Web developer</i>', '<i>UI/ UX designer</i>', '<i>Video edittor</i>'],
+  strings: ['<i>Web developer</i>', '<i>UI/ UX designer</i>', '<i>Video editor</i>'],
   typeSpeed: 200,
 });
 
