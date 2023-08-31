@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 nav {
     height: 40px;
     max-width: 100%;
@@ -75,7 +78,9 @@ nav {
 .skills_box h1 {
     text-align: center;
 }
-
+.second_container{
+    background-image: linear-gradient( 80deg, white 30%, rgb(182, 255, 11) 40%);
+}
 .webdevelopment,
 .graphics,
 .video_edittor {
@@ -85,7 +90,7 @@ nav {
     font-weight: 500;
     background-color: transparent;
     border: 3px solid black;
-    color: rgb(134, 218, 9);
+    color: rgb(16, 92, 255);
     text-shadow: 0px 2px 2px black;
 }
 
@@ -185,11 +190,32 @@ input[type=submit]:hover {
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
 }
+.button{
+    display: flex;
+}
+.button button{
+    height: 60px;
+    width: 130px;
+    margin: 50px 0px;
+    background: transparent;
+    border-radius: 50px;
+    color: white;
+    border: 2px solid white;
+}
+.button button:hover{
+    background-color: rgb(193, 255, 193, 0.8);
+    font-weight: bold;
+    border: 1px solid black;
+    text-transform: uppercase;
+    color: black;
+
+}
 @media (max-width: 500px){
     .container{
         width: 100%;
-        background-image: url("background.gif");
+        background-image: url("https://media.tenor.com/IIQ-ca9nBu0AAAAd/space.gif");
         background-size: cover;
+        height: 900px;
     }
     nav{
         width: 90%;
@@ -205,8 +231,8 @@ input[type=submit]:hover {
         text-align: center;
     }
     .developer{
-        height: 200px;
-        width: 200px;
+        height: 300px;
+        width: 300px;
         margin: auto;
     }
     .left{
@@ -249,4 +275,15 @@ input[type=submit]:hover {
     .form{
         width: 300px;
     }
+    .button{
+        display: flex;
+    }
+    .button button{
+        margin: 30px 0px;
+        width: 80px;
+        height: 40px;
+    }
+}
+.projects{
+    background-image: linear-gradient(60deg, rgb(145, 255, 255, 0.5) 50%, rgb(213, 255, 147, 0.5) 50%);
 }
